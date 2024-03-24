@@ -4,9 +4,9 @@ import java.sql.*;
 
 public class DatabaseExample {
     // MySQL yerel veritabanı bağlantı bilgileri - docker dersi için oluşturulmuştu
-    static final String LOCAL_DB_URL = "jdbc:mysql://localhost/pedantic_mayer";
+    static final String LOCAL_DB_URL = "jdbc:mysql://localhost:3306/mydatabase";
     static final String USER = "root";
-    static final String PASSWORD = "test123";
+    static final String PASSWORD = "adminpassw0rd";
 
     // Uzak veritabanı bağlantı bilgileri
     static final String REMOTE_DB_URL = "jdbc:mysql://sql11.freemysqlhosting.net:3306/sql11678198";
