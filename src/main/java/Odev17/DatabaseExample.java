@@ -9,9 +9,9 @@ public class DatabaseExample {
     static final String PASSWORD = "adminpassw0rd";
 
     // Uzak veritabanı bağlantı bilgileri
-    static final String REMOTE_DB_URL = "jdbc:mysql://sql11.freemysqlhosting.net:3306/sql11678198";
-    static final String REMOTE_USER = "sql11678198";
-    static final String REMOTE_PASSWORD = "wVJ6TIBGWB";
+    static final String REMOTE_DB_URL = "jdbc:mysql://sql11.freemysqlhosting.net:3306/sql11683450";
+    static final String REMOTE_USER = "sql11683450";
+    static final String REMOTE_PASSWORD = "zJJDHznSQU";
 
     public static void main(String[] args) {
         try {
