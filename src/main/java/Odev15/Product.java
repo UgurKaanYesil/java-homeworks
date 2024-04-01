@@ -23,12 +23,12 @@ public class Product {
     public double getPrice() {
         return price;
     }
+
     // Builder sınıfı
     public static class Builder {
         private String name;
         private String description;
         private double price;
-
 
         public Builder(String name, double price) {
             this.name = name;
