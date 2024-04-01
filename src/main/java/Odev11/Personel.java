@@ -1,6 +1,6 @@
 package Odev11;
 
-public class Personel {
+public abstract class Personel {
     String ad;
     String soyad;
     String dogumTarihi;
@@ -11,7 +11,5 @@ public class Personel {
         this.dogumTarihi = dogumTarihi;
     }
 
-    public int emeklilikYasi() {
-        return 60; // Kadınlar için varsayılan emeklilik yaşı
-    }
+    public abstract int emeklilikYasi();
 }

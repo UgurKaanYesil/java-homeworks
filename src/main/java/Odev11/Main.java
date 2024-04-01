@@ -7,7 +7,9 @@ public class Main {
 
         Departman departman = new Departman(teamLead);
 
-        departman.addPersonel(new Personel("Ayşe", "Demir", "01.01.1980"));
+        departman.addPersonel(new Erkek("Mehmet", "Demir", "01.01.1980"));
+
+        departman.addPersonel(new Kadın("Ayşe", "Kaya", "01.01.1975"));
 
         departman.addAssignment("Proje A görevi");
 

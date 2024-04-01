@@ -9,4 +9,5 @@ public class Erkek extends Personel{
     public int emeklilikYasi() {
         return 65;
     }
+
 }
