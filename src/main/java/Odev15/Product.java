@@ -5,24 +5,12 @@ public class Product {
     private String description;
     private double price;
 
-    private Product(Builder builder) {
-        this.name = builder.name;
-        this.description = builder.description;
-        this.price = builder.price;
+    public Product(String name, String description, double price) {
+        this.name = name;
+        this.description = description;
+        this.price = price;
     }
 
-
-    public String getName() {
-        return name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public double getPrice() {
-        return price;
-    }
 
     // Builder sınıfı
     public static class Builder {
@@ -30,9 +18,16 @@ public class Product {
         private String description;
         private double price;
 
-        public Builder(String name, double price) {
+        public Builder(String name) {
             this.name = name;
+        }
+        public Builder price(double price) {
             this.price = price;
+            return this;
+        }
+        public Builder description(String description) {
+            this.description = description;
+            return this;
         }
 
         public Builder setDescription(String description) {
@@ -41,7 +36,7 @@ public class Product {
         }
 
         public Product build() {
-            return new Product(this);
+            return new Product(name,description,price);
         }
     }
 }

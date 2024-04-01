@@ -7,12 +7,11 @@ public class Main {
         singleton.showMessage();
 
         // Builder örneği
-        Product product = new Product.Builder("Telefon", 999.99)
-                .setDescription("Akıllı telefon")
+        Product product = new Product.Builder("Telefon")
+                .price(999.99)
+                .description("Akıllı Telefon")
                 .build();
 
-        System.out.println("Ürün Adı: " + product.getName());
-        System.out.println("Açıklama: " + product.getDescription());
-        System.out.println("Fiyat: " + product.getPrice());
+        System.out.println("Ürün adı : " + product);
     }
 }
